@@ -1,0 +1,1032 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEAUTY PLOURE PROJECT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth;
+            /* transition: all 45 linear; */
+        } 
+        .container{
+            width: 100%;
+        }
+        .container .salon{
+            width:100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            position: fixed;
+            z-index: 1;
+            padding: 2% 5%;
+            border-bottom: 1px solid gray;
+            background-color: rgba(54, 16, 13,.100);
+           flex-wrap: wrap;
+           transition: all .1s linear;
+        }
+        .container .salon:hover{
+            background-color: darkgray;
+            color: black;
+        }
+        .menu{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        nav a{
+            text-decoration: none;
+            font-size: 20px;
+            padding-left: 25px;
+            color: white;
+            letter-spacing: 1px;
+        }
+        nav a:hover{
+            color: rgb(243, 120, 141);
+        }
+        .icn{
+             border-left:  1px solid gray;
+            padding-left: 20px;
+            color: white;
+        }
+        .banner{
+            width: 100%;
+             background-image: url(https://wallpapercave.com/wp/wp7885113.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 25% 2% 10%;
+        }
+        .banner p{
+            width: 42%;
+            font-size: 19px;
+            color: rgb(202, 196, 196);
+            line-height: 30px;
+           padding:1% 0% 5%;
+        }
+        .banner h1{
+            font-size: 100px;
+            font-weight:700;
+        }
+       .banner  a{
+            width:fit-content;
+            border: 1px solid;
+            text-decoration: none;
+            background-color: rgb(207, 115, 131);
+            color: white;
+            padding: 2% 4%;
+            margin-top: 2%;
+            border: none;
+            font-size: 15px;
+        }
+        .banner a:hover{
+            background-color:rgb(2, 2, 54);
+        }
+        .banner strong{
+            font-family: "Herr Von Muellerhoff", Sans-serif;
+            font-size: 100px;
+            font-weight:lighter;
+            color: rgb(241, 136, 154); 
+            line-height: 10%;        
+        }
+        .hair{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            margin: 2% auto;
+            flex-wrap: wrap;
+        }
+        .left-hair{
+            width: 31%;
+            /* height: 45vh; */
+        }
+        .left-hi{
+            height: 45vh;
+            overflow: hidden;
+        }
+        .left-hi:hover img{
+            transform: scale(1.2);
+        }
+        .left-hair img{
+            width: 100%;
+            height:45vh;
+           transition: all 1s linear;
+        }   
+        .left-hair strong{
+            font-family: "Herr Von Muellerhoff", Sans-serif;
+            font-size:70px;
+            font-weight: lighter;
+            color: rgb(243, 111, 133);
+        }
+        .left-hair h2{
+            font-size: 38px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 0ch;
+            padding-bottom: 9%;            
+        }
+        .left-hair p{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 23px;
+            padding-bottom: 10%;
+        }
+       .left-hair a{
+            text-decoration: none;
+            width: fit-content;
+            border: 1px solid;
+             padding: 4% 10%;
+            background-color: rgb(207, 115, 131);
+            border: none;
+            color:white
+        }
+        .left-hair a:hover{
+            background-color:rgb(2, 2, 54) ;
+        }
+        .midd-hair{
+            width: 31%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url(https://wallpaperaccess.com/full/2090280.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding-top: 15%;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+       .midd-hair strong{
+            font-family: "Herr Von Muellerhoff", Sans-serif;
+            color: rgb(243, 111, 133);
+            font-size: 4.5vw;
+            font-weight: lighter;           
+        }   
+       .midd-hair h2{
+            font-size: 2.5vw;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 0ch;
+            padding-bottom: 9%;   
+            color: white
+        }
+        .midd-hair p{
+            width: 93%;
+            font-size: 20px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 2%;
+        }
+        .midd-hair a{
+            text-decoration: none;
+            color: white;
+            width: fit-content;
+            border: 1px solid;
+            margin-top: 10%;
+            padding: 4% 10%;
+            background-color: rgb(207, 115, 131);;
+            border: none;
+        }
+        .midd-hair:hover{
+            background-color:rgb(2, 2, 54) ;
+        }
+        .container .banner2{
+            width: 100%;
+            height: 110vh;
+            background-image: url(https://ld-wp73.template-help.com/wordpress/prod_12427/v4/wp-content/uploads/2017/10/beauty-salon-img7.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+            margin: 5% auto;
+            display: flex;
+            flex-direction: column;
+           align-content: center;
+            padding-top: 5%;
+           background-attachment: fixed;
+        }
+        .banner2 strong{
+            font-family: "Herr Von Muellerhoff", Sans-serif;
+            color:#fc84b4;
+            font-size: 7.5vw;
+            font-weight: lighter; 
+            text-align: center;
+            line-height: 81%;
+        } 
+        .banner2 h1{
+            -webkit-text-stroke-width: 3px;
+            font-size: 8.5vw;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white; 
+            text-align: center;
+            line-height: 81%;
+        }
+        .banner2 p{
+            padding-top: 2%;
+            color: white;
+            font-size: 18px;
+            font-family:Arial, Helvetica, sans-serif ;
+            line-height:25px;
+            letter-spacing: 1%;
+            text-align: center;
+        }
+        .banner2 a{
+            text-decoration: none;
+            color: white;
+            width: fit-content;
+            border: 1px solid;
+            padding: 15px 40px;
+            background-color:#fc84b4;
+            border: none;
+            font-size: 15px;
+            margin: 2% 39%;
+        }
+        .banner2 a:hover{
+            background-color:rgb(2, 2, 54) ;
+        }
+        .well{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2% auto;
+            padding: 5%;
+        }
+        .well-left{
+            width:48%;
+        }
+        .well-left img{
+            width: 100%;
+            height: inherit;
+        }
+        .well-right{
+            width: 48%;
+            margin-top: 4%;
+        }
+        .well-right strong{
+            font-family: "Herr Von Muellerhoff", Sans-serif;
+            color:#fc84b4;
+            font-size: 7.5vw;
+            line-height: 2px;
+            font-weight: lighter; 
+            text-align: center;
+            font-style:100;
+        }
+        .well-right h2{
+            width: 69%;
+            margin-bottom: 5%;
+            -webkit-text-stroke-width: 3px;
+            font-size:4.5vw;  
+            padding-left: 10%;
+            line-height: 81%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(29, 29, 29); 
+        }
+        .well-right p{
+            color: rgb(189, 185, 185); 
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+        .about-main{
+            width: 100%;
+            /* height: 100vh; */
+            background-color:rgb(226, 223, 223);
+            padding-bottom: 2%;
+        }
+        .about{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px auto;
+            padding-top: 8%;
+        }
+        .left-about{
+            width: 30%;
+            padding-left: 8%;
+        }
+        .left-about strong{
+            font-family: "Herr Von Muellerhoff", Sans-serif;
+            color:#fc84b4;
+            font-size: 7vw;
+            line-height: 2px;
+            font-weight: lighter; 
+            text-align: center;
+            font-style:100;
+        }
+        .left-about h2{
+            font-size: 5vw;
+            font-family: Arial, Helvetica, sans-serif;
+            -webkit-text-stroke-width: 3px;
+            line-height: 95%;
+            padding-left: 12%;
+            color: #1f1f20;
+        }
+        .right-about{
+            width: 70%;
+            padding:2% 7%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .right-about span{
+            font-size: 20px;
+            line-height: 25px;
+        }
+        .right-about p{
+            line-height: 20px;
+            padding-top: 2%;
+            color: #303031;
+        }
+        .services{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 5% auto;
+        }
+        .services-beauty{
+            width: 24%;
+            padding-left:6%;
+        }
+       .services-beauty .icn{
+            width: 100px;
+            height: 100px;
+            width: fit-content;
+            color:white;
+            background-color:#fc84b4;
+            border-radius: 50%;
+            padding: 15% 16%;
+            font-size: 25px;
+            margin: 20px 5px;
+        }
+        .con{
+           font-family: Arial, Helvetica, sans-serif;
+        }
+        .con span{
+            font-size: 18px;
+            -webkit-text-stroke-width:0.5px;
+            padding-bottom: 20px;
+        }
+        .con p{
+            font-size: 14px;
+            color:#565658;
+            font-style: 1px;
+        }
+        .gallery{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .gallery-salon{
+            width: 25%;
+        }
+        .gallery-salon.sal {
+          margin-top: -5px;
+        }
+        .gallery-salon img{
+            width: 100%;
+            height: inherit;
+        }
+        .pricing{
+            width: 100%;
+            text-align: center;
+            margin: 2% auto;
+        }
+        .pricing strong{
+            font-family: "Herr Von Muellerhoff", Sans-serif;
+            color:#fc84b4; 
+            font-size: 7vw;
+            font-weight: lighter; 
+        }
+        .pricing h2{
+            font-size:5vw;
+            font-family: Arial, Helvetica, sans-serif;
+            -webkit-text-stroke-width: 2px;
+            line-height: 2px;
+        }
+        .product{
+            width: 90%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 7% auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .product .from{
+            width: 33.33%;
+            /* padding-left: 10%; */
+        }
+        .product .from h2{
+            font-size: 30px;
+            -webkit-text-stroke-width: 1px;
+            padding-bottom: 10px;
+        }
+        .product .from strong{
+            color:#fc84b4; 
+            font-size: 28px;
+            font-weight: lighter; 
+            padding-top: 10%;
+        }
+        .from1{
+            padding:2% 5% 12%;
+            color: #4e4e50;
+            line-height: 2vw;
+        }
+        .product .from a{
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color:#fc84b4 ;
+            padding: 5% 20%;
+            color: white;
+            font-size: 12px;
+        }
+        .product .from a:hover{
+            background-color:rgb(2, 2, 54) ;
+        }
+        .banner3{
+            width: 100%;
+            height: 100vh;
+            background-image: url(https://ld-wp73.template-help.com/wordpress/prod_12427/v4/wp-content/uploads/2017/10/beauty-salon-img17.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100% ;
+            display: flex;
+            flex-direction: column;
+           align-items: center;
+            padding-top: 7%;
+            background-attachment: fixed;
+        }
+        .banner3 strong{
+            font-family: "Herr Von Muellerhoff", Sans-serif;
+            color:#fc84b4; 
+            font-size: 6.5vw;
+            font-weight: lighter; 
+        }
+        .banner3 h1{
+            -webkit-text-stroke-width: 3px;
+            font-size: 7vw;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white; 
+            text-align: center;
+            line-height:5.5vw;
+            letter-spacing: 2px;
+        }
+        .banner3 p{
+            color: rgb(243, 237, 237);
+            text-align: center;
+            width: 60%;
+           padding: 2% 0%;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 2vw;
+        }
+        .banner3 a{
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color:#fc84b4 ;
+            padding: 1.5% 3%;
+            color: white;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+        .banner3 a:hover{
+            background-color: rgb(2, 2, 54) ;
+        }
+        .people{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 5% auto;
+        }
+        .people strong{
+            font-family: "Herr Von Muellerhoff", Sans-serif;
+            color:#fc84b4; 
+            font-size: 6.5vw;
+            font-weight: lighter; 
+        }
+        .people h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 5vw;
+            -webkit-text-stroke-width: 3px;
+            line-height: 0ch;
+            color: #0e0e0f;
+            letter-spacing: 2px;
+        }
+        .really{
+            width: 100%;
+            margin: 8% auto 2%;
+            display: flex;
+            justify-content: space-around;
+            padding:2% 10%;  
+            flex-wrap: wrap;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       .really-left{
+            width: 47%;
+            display: flex;
+            background-color: #f5f5fa;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 35px 20px 40px;
+            height: fit-content;
+            margin-bottom: 2%;
+        }
+        .bridal-2 span{
+            font-size: 15.5px;
+            color: #252525;
+            font-weight: lighter;
+            line-height: 20px;
+        }
+        .bridal-2 strong{
+            color:#fc84b4;
+        }
+        .bridal-2 p{
+            font-size: 15px;
+            padding: 5% 0% 8%;
+        } 
+        .bridal-2{
+            padding-left: 3%;
+        }
+        .contact{
+            width: 100%;
+            background-color: #fc84b4;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-style: 100;
+            /* margin: 10px auto; */
+        }
+        .contact-midd{
+            width: 23%;
+            margin: 5% auto 5%;
+            line-height:2vw;
+            display: flex;
+            /* align-items: center; */
+        }
+        .contact-midd .icn1{
+            font-size:3vw;
+            padding-right: 3%;
+            /* padding: 3%; */
+        }
+        .contact-midd a{
+            text-decoration: none;
+            color: white;
+        }
+        /* .map{
+            width: 100%;
+        } */
+        
+        .footer{
+            background-color: #0e0e0f;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .bell1{
+            width: 80%;
+            display: flex;
+            align-items: center;
+            padding: 2% 5% 2% 10%;
+        }
+        .bell1 strong{
+            color: white;
+            padding-left: 2%;
+        }
+        .all{
+            width: 80%;
+            display: flex;
+            margin: 0% auto;
+            justify-content: space-between;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 2%;
+            border-top:1px solid rgb(70, 69, 69) ;
+        }
+        .all-left{
+            width: 40%;
+            display: flex;
+        }
+        .all-left p{
+            color: rgb(61, 60, 60);
+            padding-left: 2%;
+        }
+        .all-left a{
+            text-decoration: none;
+            color: #fc84b4;
+        }
+        .all-right i{
+            color:rgb(117, 114, 114);
+            padding-left: 15px;
+        }
+        @media screen and (max-width:1051px) {
+           .container{
+                width: 100%;
+            } 
+           .salon{
+                text-align: center;
+               flex-direction: column;
+            }
+            .hair{
+                width: 100%;
+                flex-direction: column;
+                /* align-items: center; */
+            }
+            .left-hair{
+                width: 100%;
+                padding: 10px;
+            }
+            .hair1{
+                margin-bottom: 10px;
+            }
+            .midd-hair{
+                width: 100%;
+            }
+            .well{
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
+            .about{
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
+            .services{
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
+            .gallery{
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
+            .product{
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
+            .product .from1{
+                line-height: 20px;
+            }
+            .product .from h2{
+              padding-top: 8%;
+            }
+            .banner3 p{
+              line-height: 20px;
+            }
+            .really{
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
+            .really .really-left{
+                flex-direction: column;
+                padding: 10%;
+            }
+            .contact{
+                width: 100%;
+                flex-direction: column;
+                line-height: 30px;
+            }
+            .contact .contact-midd{
+                line-height: 20px;
+            }
+            .footer .bell1{
+                width: 100%;
+                flex-direction: column;
+            }
+            .all{
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
+            .map{
+                width: 100%;
+            }
+        }
+        .salon .in i{
+        color: white;
+        padding: 2px 0 0 15px;
+        font-size: 20px;
+      }
+      .salon .in i:hover{
+        color: #fc84b4;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="salon">
+            <header>
+                <div class="bell">
+                   <a href=""><img src="https://ld-wp73.template-help.com/wordpress/prod_12427/v4/wp-content/uploads/2019/09/invert-logo.png" alt=""></a>
+                </div>
+            </header>
+            <div class="menu">
+                <nav>
+                    <a href=".BEAUTY.html">Home</a>
+                    <a href="ABOUT.html">About</a>
+                    <a href="SERVICES.html">Pricing</a>
+                    <a href="#te">Testimonials</a>
+                    <a href="">Contact Us</a>
+                    <a href="BLOG.html">Blog</a>
+                </nav>
+            </div>    
+            <div class="in">
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f icn"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>   
+        </div>
+    </div>    
+    <div class="banner" id="bn">
+        <strong>get your stylish</strong>
+        <h1>LOOK <br>TODAY</h1>
+        <p>Make Your hairstyle an important part for the expression of Your identify! Our licensed hair dressers will make sure you get the eact style you want!</p>
+        <a href="">LEARN MORE</a>  
+    </div>
+    <div class="container">
+       <div class="hair">
+            <div class="left-hair">
+                <div class="left-hi">
+                    <img src="https://media.istockphoto.com/id/1356674367/photo/beautiful-model-with-curly-hairstyle-close-up-portrait-beauty-concept.jpg?s=612x612&w=0&k=20&c=Dt7TRBbDyZtgonlMjJKKPoMCaXg38RAqt2DG9V2MfLI=" alt="" id="ha">
+                </div>
+                <div class="hair1">
+                    <strong>haric</strong>
+                    <h2>SALON</h2>
+                    <p>If you want to change your style or just keep your <br> hair cut up to date here is the best place you’re <br>looking for.</p>
+                    <a href="">LOREM MORE</a>
+                </div>
+            </div>
+            <div class="midd-hair">
+                <strong>beauty</strong>
+                 <h2>SALON</h2>
+                 <P>We’re a full service salon. We offer the latest and highest quality services for all of your family members.</P>
+                 <a href="">LEARN MORE</a>   
+                </div>
+            <div class="left-hair">
+                <div class="left-hi">
+                    <img src="https://media.istockphoto.com/id/1410689415/photo/young-woman-with-long-healthy-and-shiny-curly-hair-beautiful-model-female-with-wavy-hairstyle.jpg?s=612x612&w=0&k=20&c=R1cFM2elof1S5RCKlJp4H7lOJUIERDLxUd3pW24HWmM=" alt="" id="ha1">
+                </div>
+                <div class="hair1">
+                    <strong>wellness</strong>
+                    <h2>SALON</h2>
+                    <p>We offer a wide variety of services, focusing on <br> personal aesthetics. Our practitioners are well- <br>practiced.</p>
+                    <a href="">LOREM MORE</a>
+                </div>    
+            </div>
+            <!-- hair end -->
+        </div>
+        <div class="banner2">
+              <strong>book your visit online</strong>
+              <h1>SAVE UP TO<br>30% OFF</h1>
+              <p>We make a discount only for those our customers who make an <br>appointment, so hurry up to make an appointment with our specialists to save up to 30%!</span></p>
+              <a href="">MAKE AN APPOINTMENT</a>
+        </div>
+        <div class="well">
+            <div class="well-left">
+                <img src="https://ld-wp73.template-help.com/wordpress/prod_12427/v4/wp-content/uploads/2017/10/beauty-salon-img8.jpg" alt="">
+            </div>
+            <div class="well-right">
+                <strong>welcome to</strong>
+                <h2>BEAUTY SALON</h2>
+                <p>We value our clients and know exactly what will suit you more and  how to implement your most creative ideas into reality to enhance your natural looks and make you look gorgeous whenever you go! Trust us to make you look special!</p>
+            </div>
+        </div> 
+        <!-- well end -->
+        <div class="about-main" id="ab"> 
+            <div class="about">
+                <div class="left-about">
+                    <strong>about</strong>
+                    <h2>BEAUTY SALON</h2>
+                </div>
+                <div class="right-about">
+                    <span><b>Our beauty salon was founded in 2010, and since then we are trying to make our customers more happy and confident!</b></span>
+                    <p>We started as a group of inspired hairdressers and stylists. Now we have a full-fledged team of specialists, who know what they do and have all the skills to enhance the natural beauty in you! We work with high-quality equipment and use high-quality materials only!</p>
+                </div>
+            </div>    
+            <div class="services">
+                <div class="services-beauty">
+                    <i class="fa-sharp fa-solid fa-scissors icn"></i>
+                    <div class="con">
+                        <span><b>From hair color makeover to stylish highlights</b></span><br><br>
+                        <p>From just a color retouch or a color correction to an extreme make over our great colorists will show you a huge variety of color to match your skin tone.</p>
+                    </div>
+                </div>
+                <div class="services-beauty">
+                    <i class="fa-solid fa-eye icn"></i>
+                    <div class="con">
+                        <span><b>Makeup artist services will make your beauty shine</b></span><br><br>
+                        <p>Our make-up artists will make your appearance memorable and bright, and take care of your skin's health! We work only with the top quality cosmetics!</p>
+                    </div>
+                </div>
+                <div class="services-beauty">
+                    <i class="fa-solid fa-leaf icn"></i>
+                    <div class="con">
+                        <span><b>Natural skin care for face and body & SPA</b></span><br><br>
+                        <p>Exfoliation improves the texture of the skin, helps reduce lines and wrinkles, and allows deeper absorption of moisturizers and antioxidants.</p>
+                    </div>
+                </div>
+                <div class="services-beauty">
+                    <i class="fa-solid fa-person icn"></i>
+                    <div class="con">
+                        <span><b>Personal shopping and styling services</b></span><br><br>
+                        <p>We offer a premiere image consulting service no other styling beauty salon offers. You, as our client, will benefit from a team of two personal stylists!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- about end -->
+        <div class="gallery">
+            <div class="gallery-salon">
+                <img src="https://ld-wp73.template-help.com/wordpress/prod_12427/v4/wp-content/uploads/2017/10/beauty-salon-img9.jpg" alt="">
+            </div>
+            <div class="gallery-salon">
+                <img src="https://ld-wp73.template-help.com/wordpress/prod_12427/v4/wp-content/uploads/2017/10/beauty-salon-img10.jpg" alt="">
+            </div>
+            <div class="gallery-salon">
+                <img src="https://ld-wp73.template-help.com/wordpress/prod_12427/v4/wp-content/uploads/2017/10/beauty-salon-img11.jpg" alt="">
+            </div>
+            <div class="gallery-salon">
+                <img src="https://ld-wp73.template-help.com/wordpress/prod_12427/v4/wp-content/uploads/2017/10/beauty-salon-img12.jpg" alt="">
+            </div>
+            <div class="gallery-salon sal">
+                <img src="https://ld-wp73.template-help.com/wordpress/prod_12427/v4/wp-content/uploads/2017/10/beauty-salon-img13.jpg" alt="">
+            </div>
+            <div class="gallery-salon sal">
+                <img src="https://ld-wp73.template-help.com/wordpress/prod_12427/v4/wp-content/uploads/2017/10/beauty-salon-img14.jpg" alt="">
+            </div>
+            <div class="gallery-salon sal">
+                <img src="https://ld-wp73.template-help.com/wordpress/prod_12427/v4/wp-content/uploads/2017/10/beauty-salon-img15.jpg" alt="">
+            </div>
+            <div class="gallery-salon sal">
+                <img src="https://ld-wp73.template-help.com/wordpress/prod_12427/v4/wp-content/uploads/2017/10/beauty-salon-img16.jpg" alt="">
+            </div>
+        </div>
+        <div class="pricing" id="se">
+            <strong>pricing</strong>
+            <h2>SERVICES</h2>
+        </div>
+        <div class="product">
+            <div class="from">
+                <h2>HAIRCUTS</h2>
+                <strong>from <b>$45</b></strong>
+                <ul class="from1">
+                    <li>Botanical hair therapy</li>
+                    <li>Children’s cut</li>
+                    <li>Women’s haircut & finish
+                    <li>Men’s haircut</li>
+                    <li>Post spa blow dry</li>
+                    <li>Neck trim</li>
+                </ul>
+                <a href="">make an appointment</a>
+            </div>
+            <div class="from">
+                <h2>WAXING</h2>
+                <strong>from <b>$45</b></strong>
+                <ul class="from1">
+                    <li>Facial waxing</li>
+                    <li>Brazilian waxing</li>
+                    <li>Eyebrows trimming</li>
+                    <li>Waxing for men</li>
+                    <li>Sugaring</li>
+                    <li>Full body waxing</li>
+                </ul>
+                <a href="">make an appointment</a>
+            </div>
+            <div class="from">
+                <h2>WELLNESS</h2>
+                <strong>from <b>$45</b></strong>
+                <ul class="from1">
+                    <li>Body wraps</li>
+                    <li>Spa manicure</li>
+                    <li>Swedish massage</li>
+                    <li> Aromatherapy massage</li>
+                    <li>Hot stones</li>
+                    <li>LED light therapy</li>
+                </ul>
+                <a href="">make an appointment</a>
+            </div>
+        </div>
+        <div class="banner3">
+            <strong> get your stylish</strong>
+            <h1>AWARD WINNING <br>HAIR SALON</h1>
+            <p>We are always willing to make our customers happy and are ready to support your most bold and creative ideas in haircuts and hair coloring! Feel free to express yourself through your looks!</p>
+            <a href="">make an appointment</a>
+        </div>
+        <div class="people" id="te">
+            <strong>what people say?</strong>
+            <h2>TESTIMONIALS</h2>
+        </div>
+        <div class="really">
+            <div class="really-left">
+                <div class="bridal-1">
+                    <img src="https://ld-wp73.template-help.com/wordpress/prod_12427/v4/wp-content/uploads/2017/10/beauty-salon-testi1.png" alt="">
+                </div>
+                <div class="bridal-2">
+                    <span><b>Really enjoyed your salon. The hairdressers are polite and skilled, provided me with a bit of advice. Well done!</b></span>
+                   <p><strong>Elizabeth</strong> – Tuesday, October 17, 2023</p>
+                </div>
+            </div>
+            <div class="really-left">
+                <div class="bridal-1">
+                    <img src="https://ld-wp73.template-help.com/wordpress/prod_12427/v4/wp-content/uploads/2017/10/beauty-salon-testi2.png" alt="">
+            </div>
+            <div class="bridal-2">
+                <span><b>Made my bridal hair there, and I was astonished with the results! The hairdo was gorgeous with plenty of plaits, and I enjoyed the SPA!</b></span>
+                <p><strong>Brittany</strong> – Thursday, October, 19, 2023</p>
+            </div>
+                
+            </div>
+            <div class="really-left">
+                <div class="bridal-1">
+                    <img src="https://ld-wp73.template-help.com/wordpress/prod_12427/v4/wp-content/uploads/2017/10/beauty-salon-testi3.png" alt="">
+                </div>
+                <div class="bridal-2">
+                    <span><b>You won't find better than this place, these girls know Bridal Hair! RThey know what will work and what won't and worked absolute wonders on mine!</b></span>
+                   <p><strong>Sheila</strong> – Saturday, October, 14, 2023</p>
+                </div>
+            </div>
+            <div class="really-left">
+               <div class="bridal-1">
+                     <img src="https://ld-wp73.template-help.com/wordpress/prod_12427/v4/wp-content/uploads/2017/10/beauty-salon-testi4.png" alt="">
+               </div>
+               <div class="bridal-2">
+                    <span><b>Blow dry, rollers, extensions, curling, nothing was too much trouble and all was expertly done. An added bonus was that the hairdresser was just lovely, and helped make me feel confident!</b></span>
+                    <p><strong>Jennifer</strong> –  Friday, October, 13, 2023</p>
+               </div>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="contact-midd">
+                <div class="icn1"><i class="fa-sharp fa-solid fa-location-dot"></i></div>
+                <div class="add">
+                    <strong>Address:</strong>
+                    <p>4578 Marmora Road, Glasgow</p>
+                </div>
+            </div>  
+            <div class="contact-midd">
+                <div class="icn1"><i class="fa-solid fa-phone-flip"></i></div>
+                    <div class="call">
+                        <p><strong>Have a Questions? Call us:</strong></p>
+                        <p><a href="">+7-495-1234567;</a></p>
+                        <a href="">+7-495-1234568</a>
+                    </div>
+            </div>     
+            <div class="contact-midd">
+                <div class="icn1">
+                    <i class="fa-sharp fa-regular fa-clock"></i>
+                </div>
+                <div class="time">
+                    <strong>Working time:</strong>
+                    <p>Monday–Sunday: 10:00–20:00;</p>
+                </div>
+            </div>     
+        </div>
+        <div class="map">
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.546649488601!2d-0.12209412360738635!3d51.503186371812255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2sin!4v1705051225663!5m2!1sen!2sin" width="1340" height="300"   style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        </div>
+            <div class="footer">
+                <div class="bell1">
+                        <a href=""><img src="https://ld-wp73.template-help.com/wordpress/prod_12427/v4/wp-content/uploads/2019/09/invert-logo.png" alt=""></a>
+                        <strong>Beauty Salon</strong>
+                </div>
+                <div class="all">
+                    <div class="all-left">
+                        <a href="">Zemez</a>
+                        <p>All rights reserved.</p>
+                    </div>
+                    <div class="all-right">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>    
+                </div>
+            </div>    
+        </div>
+    </div>
+    <script>
+        var a = document.getElementById("ha");
+        a.addEventListener("mouseenter",function(){
+            a.src ="https://ld-wp73.template-help.com/wordpress/prod_12427/v4/wp-content/uploads/2017/10/beauty-salon-img4.jpg";
+        })
+        var b = document.getElementById("ha");
+        b.addEventListener("mouseleave",function(){
+            b.src ="https://media.istockphoto.com/id/1356674367/photo/beautiful-model-with-curly-hairstyle-close-up-portrait-beauty-concept.jpg?s=612x612&w=0&k=20&c=Dt7TRBbDyZtgonlMjJKKPoMCaXg38RAqt2DG9V2MfLI=";
+        })
+        var c = document.getElementById("ha1")
+        c.addEventListener("mouseenter",function(){
+            c.src="https://ld-wp73.template-help.com/wordpress/prod_12427/v4/wp-content/uploads/2017/10/beauty-salon-img6.jpg";
+        })
+        var c = document.getElementById("ha1")
+        c.addEventListener("mouseleave",function(){
+            c.src="https://media.istockphoto.com/id/1410689415/photo/young-woman-with-long-healthy-and-shiny-curly-hair-beautiful-model-female-with-wavy-hairstyle.jpg?s=612x612&w=0&k=20&c=R1cFM2elof1S5RCKlJp4H7lOJUIERDLxUd3pW24HWmM=";
+        })
+</script>
+      
+</body>
+</html>
